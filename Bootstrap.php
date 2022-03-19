@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1>Bootstrap5</h1>
+        <h1>Bootstrap5</h1><hr>
     </div>
 <script src="js/bootstrap.min.js"></script>    
 </body>
