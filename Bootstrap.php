@@ -9,8 +9,31 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1>Bootstrap5</h1><hr>
+        <h1>Programando con JavaScript</h1><hr>
+        <form action="">
+            <input type="text" class="form-control" id="objeto1" placeholder="Digita un numero"/>
+            +<input type="text" class="form-control" id="objeto2" placeholder="Digita segundo numero">
+            <input type="submit" value="Calcular" class="btn btn-sm btn-success" onclick="Calcular();">
+        </form>
     </div>
+    <script>
+         function Calcular(){
+         numero1 = document.getElementById('objeto1').value;
+         numero2 = document.getElementById('objeto2').value;
+         if(numero1 == ''){
+           alert("El primer campo esta vacio no puedo hacer una suma sin dos numeros");
+         }
+         else if(numero2 == ''){
+            alert("El segundo campo esta vacio no puedo hacer una suma sin dos numeros");
+         }
+         else{
+         numero1 = parseInt(numero1);
+         numero1 = parseInt(numero2);    
+         suma = numero1 + numero2;
+         alert("El resultado es: "+suma); 
+          }
+         }
+    </script>
 <script src="js/bootstrap.min.js"></script>    
 </body>
 </html>
