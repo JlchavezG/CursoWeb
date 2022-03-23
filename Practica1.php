@@ -30,7 +30,7 @@
          numero1 = parseInt(numero1);
          numero1 = parseInt(numero2);    
          suma = numero1 + numero2;
-         alert("El resultado es: "+suma); 
+         document.write(suma); 
           }
          }
     </script>
