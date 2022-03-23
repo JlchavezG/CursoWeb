@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Practica 2 JavaScript | Login</title>
+</head>
+<body>
+    <div class="container mt-5">
+         <div class="card shadow">
+             <div class="row py-2">
+               <form action="" method="post">  
+                <div class="col">
+                     <input type="text" id="usuario" placeholder="Usuario" class="form-control" required>
+                 </div>
+                 <div class="col">
+                     <input type="password" id="pass" placeholder="Password" class="form-control" required>
+                 </div>
+                 <div class="col">
+                     <input type="submit" value="Ingresar" class="btn btn-sm btn-info" onclick="validar();">
+                 </div>
+                </form>
+             </div>
+         </div>
+    </div>
+<script>
+    function validar(){
+        user = "CursoWeb";
+        pass = "606";
+        usuario = document.getElementById('usuario').value;
+        password = document.getElementById('pass').value;
+        if(usuario == ''){
+            document.write("El campo usuario no puede estar vacio");
+        }
+        else if(password == ''){
+           document.write("El campo password no puede estar vacio");
+        }
+        else {
+        if(user == usuario && pass == password){
+            alert("Bienvenido al sistema: "+usuario);
+        }
+        else{
+            alert("No eres un usuario");
+        }
+
+    }
+
+    }
+</script>    
+<script src="js/bootstrap.min.js"></script>    
+</body>
+</html>

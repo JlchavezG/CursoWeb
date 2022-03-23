@@ -28,7 +28,7 @@
          }
          else{
          numero1 = parseInt(numero1);
-         numero1 = parseInt(numero2);    
+         numero2 = parseInt(numero2);    
          suma = numero1 + numero2;
          document.write(suma); 
           }
