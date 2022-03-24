@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Plantilla</title>
+</head>
+<body>
+      <div class="container">
+          <div class="card shadow text-center mt-4">
+              <h4>Multiplicacion de Numeros</h4><hr>
+              <div class="row">
+                  <div class="col">
+                    <input type="text" id="numero1" placeholder="Digata un numero" class="form-control">
+                  </div>*
+                  <div class="col">
+                    <input type="text" id="numero2" placeholder="Digata un numero" class="form-control">
+                  </div>
+              </div>
+              <div class="row mt-3">
+                  <div class="container">
+                      <button class="btn btn-sm btn-warning" onclick="Multi();">Calcular</button>
+                  </div>
+              </div>
+          </div>
+      </div> 
+<script>
+    function Multi(){
+        numero1 =  document.getElementById('numero1').value;
+        numero2 =  document.getElementById('numero2').value;
+        if(numero1 == '' || numero2 == ''){
+            alert("Los campos solicitados no pueden estar vacios");
+        }
+        else {
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);    
+        multiplicacion = numero1 * numero2;    
+        document.write("Los numeros que colocaste son: "+numero1+" y el: "+numero2+" dando como resultado de la multiplicacion: " +multiplicacion);
+        }
+    }
+</script>      
+<script src="js/bootstrap.min.js"></script>    
+</body>
+</html>
