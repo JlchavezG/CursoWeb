@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Plantilla</title>
+</head>
+<body>
+    <script>
+        function toogle(){
+            var img = document.getElementById('myImagen').src;
+            document.getElementById('f').innerHTML=img;
+            if(img.indexOf('apagado.gif')!= -1)
+            document.getElementById('myImagen').src="img/encendido.gif"
+            else
+            document.getElementById('myImagen').src="img/apagado.gif"
+        }
+    </script>
+ <h2>Condicionales</h2>
+ <p>Prende y apaga el foco</p>
+ <p id="f">Archivo de la Imagen</p>
+ <img src="img/apagado.gif" alt="Foco" id="myImagen" style="width: 100px;">
+ <button onclick="toogle()">Interruptor</button>      
+<script src="js/bootstrap.min.js"></script>    
+</body>
+</html>

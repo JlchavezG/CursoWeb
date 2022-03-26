@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Practica 6 con JavaScript</title>
+    <script>
+        function MostrarMensaje(){
+            var nombre, edad;
+            nombre = prompt('Por favor Introduce tu Nombre');
+            if(nombre == ""){
+               alert("No has introducido tu nombre");
+            }
+            else{
+                alert("Hola "+nombre+" Bienvenido al Curso de JavaScript");
+            }
+            edad = prompt("Digita tu edad: ");
+            edad = Number(edad);
+
+            if(edad > 0 && edad > 10){
+                alert("Aun eres un Niño: "+nombre);
+            }
+            else if(edad >= 10 && edad < 18){
+                alert("Ya eres un Joven");
+            }
+            else if(edad >=41 && edad < 90){
+                alert("Ya eres una persona Mayor");
+            }
+            else{
+                alert("No has introducido un valor valido de edad");
+            }
+
+        }
+    </script>
+</head>
+<body> 
+    <img src="img/pikachu.jpg" onclick="MostrarMensaje();">
+    <p onclick="alert('Acabas de darle clik al parrafo')" style="background-color: blue; color: white;">Darle Clic</p>
+<script src="js/bootstrap.min.js"></script>    
+</body>
+</html>
